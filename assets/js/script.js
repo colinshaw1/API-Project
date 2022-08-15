@@ -5,6 +5,8 @@ const resultsModal = new bootstrap.Modal(document.getElementById("resultsModal")
 
 //add click event listener
 document.getElementById("status").addEventListener("click", e => getStatus(e));
+//add button to run checks for POST requests
+document.getElementById("submit").addEventListener("click", e => postForm(e));
 
 //get request task to make get resquest to url with api key and pass function to data to display it
 async function getStatus(e){
